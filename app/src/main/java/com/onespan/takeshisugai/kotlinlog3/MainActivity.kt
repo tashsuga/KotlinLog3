@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         // homework
    */
 
-        val human = Human("トム", 30)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+        val human = Human("トム", 30, "哲学")      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
 
         human.say()
 

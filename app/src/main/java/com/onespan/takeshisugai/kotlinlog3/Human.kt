@@ -7,11 +7,23 @@ import android.util.Log
 
 open class Human: Animal,Thinkable   {
 
-    private var hobby = "哲学"
-    // hobby = "哲学";
 
+    // internal abstract var hobby
+
+    var hobby: String
+    /*
+    private var hobby
+    = "哲学"
+    hobby = "哲学";
+    */
+
+    
     // superで親クラスのコンストラクタを呼ぶ
-    constructor(name: String, age: Int) : super(name, age) {
+    constructor(name: String, age: Int, hobby: String) : super(name, age)
+    {
+
+        this.hobby = hobby
+
     }
 
     override fun say() {
